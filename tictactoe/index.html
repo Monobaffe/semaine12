@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<![endif]--><!--force la compatibilité IE-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Le jeux du morpion en html/css/js.">
+	<meta charset="utf-8">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="spinloader.css">
+	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+
+	<title>Tic_Tac_Toe.</title>
+
+</head>
+
+<body>
+		<div id="loader-wrapper">
+  <div id="loader"></div>
+
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
+</div>
+<div id="content">
+
+	<header>
+
+		<img src="images/tictactoe.jpg" alt="bannière tictactoe">
+
+	</header>
+
+<div class ="tictactoe">
+<table width="380" height="373" cellspacing="0" cellpadding="3" border="0">
+<tbody>
+<tr><!--premier tr-->
+	<td height="20" style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+</tr>
+
+<tr><!--second tr-->
+	<td width="20" style=" background:#000"></td>
+	<td width="110" height="110">
+		<a id="A1" onclick='makeMove("A1")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td>
+
+	<td width="110">
+		<a id="A2" onclick='makeMove("A2")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td>
+
+	<td width="110">
+		<a id="A3" onclick='makeMove("A3")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td>
+
+</tr>
+
+<tr><!--troisieme tr-->
+	<td height="20" style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+</tr>
+
+<tr><!-- quatrieme tr-->
+	<td width="20" style=" background:#000"></td>
+
+	<td width="110" height="110">
+		<a id="B1" onclick='makeMove("B1")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td><!--td deco-->
+
+	<td width="110">
+		<a id="B2" onclick='makeMove("B2")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td>
+
+	<td width="110">
+		<a id="B3" onclick='makeMove("B3")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td>
+</tr>
+
+<tr><!--cinquieme tr-->
+	<td height="20" style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+</tr>
+
+<tr><!-- sixieme tr-->
+	<td width="20" style=" background:#000"></td>
+	<td width="110" height="110">
+		<a id="C1" onclick='makeMove("C1")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td><!--td deco-->
+
+	<td width="110">
+		<a id="C2" onclick='makeMove("C2")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td>
+
+	<td width="110">
+		<a id="C3" onclick='makeMove("C3")' href="#">_</a>
+	</td>
+
+	<td width="20" style=" background:#000"></td>
+</tr>
+
+<tr><!--septieme tr-->
+	<td height="20" style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+	<td style=" background:#000"> </td>
+</tr>
+
+</tbody>
+</table>
+
+<div id="score">
+	<div id="win">Parties gagné: 0</div>
+	<div id="loose">Parties perdu: 0</div>
+	<div id="tie">Egalité: 0</div>
+</div>
+<br>
+<div id="buttons">
+	<button id="restartx" onclick='restartGame("X")'>Jouer avec 'X'</button>
+	<button id="restartx" onclick='restartGame("O")'>Jouer avec 'O'</button>
+</div>
+
+</div>
+
+</div><!--div loader-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+
+  // Fakes the loading setting a timeout
+  setTimeout(function() {
+    $('body').addClass('loaded');
+  }, 3000);
+
+});
+
+alsolike(
+  "RWBQRM", "Flexbox Products interaction",
+  "aOQddB", "Open & Close Animation",
+  "wBOder", "Subtle Icons hover effect"
+);
+</script>
+
+<script src="tictactoe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+header{
+	height: 70px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+body{
+	background-color: grey;
+    height: 820px;
+    width: 100%;
+}
+
+div.tictactoe {
+    height: 600px;
+    margin-left: 340px;
+    width: 800px;
+    margin-top: 120px;
+    }
+
+.tictactoe{
+	text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+	display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+#A1{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+#A2{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+#A3{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;/
+}
+
+#B1{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+#B2{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+#B3{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+#C1{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+#C2{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+#C3{
+	color: black;
+	font-size: 90px;
+	margin-left: 7px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+#score {
+    margin: 10px;
+    width: 800px;
+}
+
+
+#win {
+    float: left;
+    margin-right: 15px;
+}
+
+
+#loose {
+    float: left;
+    margin-right: 15px;
+}
+
+
+#tie{
+    float: left;
+    margin-right: 15px;
+}
+
+
+#buttons {
+    margin-right: 430px;
+    margin-top: 10px;
+}
+
+
+button {
+    margin: 5px;
+}
+
